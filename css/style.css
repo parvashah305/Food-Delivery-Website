@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    background-color: rgba(39, 5, 5,0.4);
+     /* opacity: 0.4;  */
+    width: 100vw;
+    font-family: "Madimi One", sans-serif;
+    justify-content: center;
+
+    
+    
+}
+
+#navbar .hamburger{
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    
+}
+#logo{
+    margin: 3px 6px;
+    
+}
+
+#logo img{
+    margin: 3px 22px;
+    height: 60px;
+}
+
+#navbar ul{
+    display: flex;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+
+#navbar ul li a{
+    color: #6a717c;
+   
+    display: block;
+    padding: 2px 10px;
+    text-decoration: none;
+   
+
+}
+
+#navbar ul li a:hover{
+    background-color: gray;
+    color: black;
+    border-radius: 5px;
+}
+
+#home{
+    display: flex;
+    /* justify-content: center; */
+    
+    /* align-items: center; */
+    flex-direction: column;
+    min-height: 60vh;
+    
+    background: url("/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    color: white;
+    font-family: "Madimi One", sans-serif;
+    background-position: 0% 15%;
+    overflow: hidden;
+    width: 100vw;
+    
+}
+
+#content{
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.h-primary{
+    padding: 12px;
+    font-size: 3.8rem;
+    
+}
+
+#home p{
+    padding: 2px;
+    font-size: 1rem;
+}
+
+.btn{
+    padding: 6px 17px;
+    margin: 11px;
+    background-color: #571e13;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: "Madimi One", sans-serif;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #efeae9;
+}
+
+.h-secondary{
+    padding: 12px;
+    font-size: 2.5rem;
+}
+
+.center{
+    text-align: center;
+}
+
+#services-container{
+    margin: 20px 0px;
+    font-family: "Madimi One", sans-serif;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#services-1{
+    display: flex;
+    margin: 40px;
+   
+}
+
+#services-1 .box{
+    border: 2px solid brown;
+    padding: 25px 17px;
+    margin: 0px 6px;
+    border-radius: 20px;
+    background-color: #dce0e7;
+
+}
+
+#services-1 .box img{
+    /* height: 50%; */
+    height: 17vw;
+    margin: auto;
+    display: block;
+}
+
+#services-2{
+    display: flex;
+    margin: 40px 80px;
+}
+
+ .box2{
+   
+    border: 2px solid brown;
+    padding: 25px 17px;
+    margin: 0px 17px;
+    border-radius: 20px;
+    background-color: #dce0e7;
+}
+
+ .box2 img{
+    height: 20vw;
+    margin: auto;
+    display: block;
+}
+
+#about-us{
+    font-family: "Madimi One", sans-serif;
+    color: white;
+    background-color: rgb(39, 5, 5);
+}
+
+#about-us p{
+    padding: 3px 17px;
+    font-size: 1.2rem;
+    font-family: "Overpass", sans-serif;
+    
+}
+
+
+#contact{
+    background: url('/contact.jpg');
+     background-repeat: no-repeat;
+    background-size: cover; 
+    height: 95vh;
+    z-index: -1;
+    color: white;
+    background-position: 0% 20%;
+    opacity: 0.89;
+    padding: 20px 5px;
+    font-family: "Madimi One", sans-serif;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+    font-family: "Overpass", sans-serif;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.2rem;
+    font-family: "Overpass", sans-serif;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.8rem;
+    font-family: "Overpass", sans-serif;
+}
+
+#contact-box .btn{
+   
+   background-color: #131533;
+   width: 100%;
+
+}
+#contact-box .btn:hover{
+    background-color: white;
+    color: #131533;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 4px 5px;
+    font-family: "Overpass", sans-serif;
+}
+
+@media (max-width:1250px) {
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    #navbar #logo{
+        margin: 1vw 2vw;
+    }
+
+    #navbar ul{
+        display: none;
+    }
+
+    #navbar .hamburger{
+        display: block;
+        margin: 1vw 2vw;
+    }
+
+    #services-1{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #services-1 .box{
+        margin: 1vw 1vw;
+        padding: 1vw 1vw;
+    }
+
+    #services-2{
+        display: flex;
+        flex-direction: column;
+        margin: -3vw 3.3vw;
+    }
+
+    #services-2 .box2{
+        margin: 1vw 1vw;
+        padding: 1vw 1vw;
+    }
+
+    #services-1 .box img{
+        height: 30vw;
+    }
+    
+    #services-2 .box2 img{
+        height: 30vw;
+    }
+}
+
